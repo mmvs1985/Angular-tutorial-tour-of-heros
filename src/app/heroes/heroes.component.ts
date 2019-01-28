@@ -24,7 +24,7 @@ export class HeroesComponent implements OnInit {
   //old declaration without heroes service
   //heroes=HEROES;
   //constructor() { }
-  selectedHero: Hero;
+  //selectedHero: Hero;
 
 
   constructor(private heroService: HeroService) { }
@@ -43,7 +43,7 @@ export class HeroesComponent implements OnInit {
         .subscribe(heroes => this.heroes = heroes);
   }
 
-  onSelect(hero: Hero): void {
+ /* onSelect(hero: Hero): void {
     this.selectedHero = hero;
-  }
+  }*/
 }
